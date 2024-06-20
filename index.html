@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penghilang Noda Darah</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Penghilang Noda Darah</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#product">Produk</a></li>
+                    <li><a href="#testimonials">Testimoni</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Selamat Datang di Penghilang Noda Darah</h2>
+            <p>Cairan terbaik untuk menghilangkan noda darah dari pakaian Anda.</p>
+            <a href="#product" class="cta-button">Lihat Produk</a>
+        </div>
+    </section>
+
+    <section id="about" class="content-section">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p>Kami adalah perusahaan yang berdedikasi untuk menyediakan solusi penghilang noda terbaik.</p>
+        </div>
+    </section>
+
+    <section id="product" class="content-section">
+        <div class="container">
+            <h2>Produk Kami</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="product-image1.jpg" alt="Cairan Penghilang Noda">
+                    <div class="product-details">
+                        <h3>Cairan Penghilang Noda 1</h3>
+                        <p>Deskripsi produk yang lengkap dan informatif.</p>
+                        <p class="price">Rp 50.000</p>
+                        <button onclick="orderNow('Cairan Penghilang Noda 1', 'Rp 50.000')">Pesan Sekarang</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="product-image2.jpg" alt="Cairan Penghilang Noda">
+                    <div class="product-details">
+                        <h3>Cairan Penghilang Noda 2</h3>
+                        <p>Deskripsi produk yang lengkap dan informatif.</p>
+                        <p class="price">Rp 60.000</p>
+                        <button onclick="orderNow('Cairan Penghilang Noda 2', 'Rp 60.000')">Pesan Sekarang</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="product-image3.jpg" alt="Cairan Penghilang Noda">
+                    <div class="product-details">
+                        <h3>Cairan Penghilang Noda 3</h3>
+                        <p>Deskripsi produk yang lengkap dan informatif.</p>
+                        <p class="price">Rp 70.000</p>
+                        <button onclick="orderNow('Cairan Penghilang Noda 3', 'Rp 70.000')">Pesan Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="content-section">
+        <div class="container">
+            <h2>Testimoni Pelanggan</h2>
+            <div class="testimonial-item">
+                <p>"Produk ini sangat efektif! Noda darah hilang seketika."</p>
+                <p>- Pelanggan A</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="content-section">
+        <div class="container">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <h3>Apakah produk ini aman digunakan pada semua jenis kain?</h3>
+                <p>Ya, produk kami aman digunakan pada semua jenis kain.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Bagaimana cara menggunakan produk ini?</h3>
+                <p>Cukup semprotkan pada noda, diamkan selama beberapa menit, lalu bilas atau cuci seperti biasa.</p>
+            </div>
+            <!-- Tambahkan lebih banyak FAQ sesuai kebutuhan -->
+        </div>
+    </section>
+
+    <section id="contact" class="content-section">
+        <div class="container">
+            <h2>Kontak Kami</h2>
+            <form id="contactForm">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="product">Produk yang Dipesan:</label>
+                <input type="text" id="product" name="product" readonly>
+                <label for="price">Harga:</label>
+                <input type="text" id="price" name="price" readonly>
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+            <div class="social-media">
+                <h3>Ikuti kami di media sosial:</h3>
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="feedback" class="content-section">
+        <div class="container">
+            <h2>Kritik dan Saran</h2>
+            <form>
+                <label for="feedback">Kritik dan Saran:</label>
+                <textarea id="feedback" name="feedback"></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Penghilang Noda Darah</p>
+        </div>
+    </footer>
+
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header" onclick="toggleChat()">
+            <p>Chat dengan Penjual</p>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <div class="messages" id="messages"></div>
+            <input type="text" id="chatInput" placeholder="Ketik pesan...">
+            <button onclick="sendMessage()">Kirim</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
